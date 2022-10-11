@@ -181,7 +181,7 @@ sub export_list_item {
     }
 
     if ($elem->desc_term) {
-         push @$text, "\e[1m[", $elem->desc_term, "]\e[22m", " :: ";
+         push @$text, "\e[1m", $elem->desc_term, "\e[22m", " :: ";
     }
 
     push @$text, $self->export_elements(@{$elem->children}) if $elem->children;
