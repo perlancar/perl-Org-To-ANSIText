@@ -270,9 +270,6 @@ sub export_timestamp {
 }
 
 sub export_link {
-    require Filename::Image;
-    require URI;
-
     my ($self, $elem) = @_;
 
     my $text = [];
